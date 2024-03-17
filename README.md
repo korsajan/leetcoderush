@@ -2,9 +2,8 @@
 
 ## String
 
-- [ ] [Implement strStr()](https://leetcode.com/problems/implement-strstr/)
-- [ ] [Reverse String](https://leetcode.com/problems/reverse-string/)
-- [ ] [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/)
+- [x] [Implement strStr()](https://leetcode.com/problems/implement-strstr/)
+- [x] [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/)
 - [ ] [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)
 - [ ] [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
 - [ ] [Integer to Roman](https://leetcode.com/problems/integer-to-roman/)
