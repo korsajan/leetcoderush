@@ -30,6 +30,7 @@ class HTMLTaskParser(HTMLParser):
             if data == '[ ]':
                 self.total += 1
             if data == '[x]':
+                self.total += 1
                 self.solved += 1
 
     def parse_tasks(self, html: str):
