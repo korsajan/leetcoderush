@@ -1,5 +1,5 @@
 ![progress](https://img.shields.io/badge/progress-2%25-yellowgreen)
-
+[![Go Tests](https://github.com/korsajan/leetcoderush/actions/workflows/go_test.yml/badge.svg?branch=main)](https://github.com/korsajan/leetcoderush/actions/workflows/go_test.yml)
 ## String
 
 - [x] [Implement strStr()](https://leetcode.com/problems/implement-strstr/)
