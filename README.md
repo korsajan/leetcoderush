@@ -1,5 +1,11 @@
 ![progress](https://img.shields.io/badge/progress-2%25-yellowgreen)
 [![Go Tests](https://github.com/korsajan/leetcoderush/actions/workflows/go_test.yml/badge.svg?branch=main)](https://github.com/korsajan/leetcoderush/actions/workflows/go_test.yml)
+![Language](https://img.shields.io/github/languages/top/korsajan/leetcoderush)
+
+![Language Go](https://img.shields.io/badge/Go-00ADD8.svg?&logo=go&logoColor=white)
+![Language Python](https://img.shields.io/badge/Python-3776AB.svg?&logo=python&logoColor=white)
+
+
 ## String
 
 - [x] [Implement strStr()](https://leetcode.com/problems/implement-strstr/)
