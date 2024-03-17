@@ -1,0 +1,23 @@
+name: Go Tests
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Run Go Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Go
+        uses: action/setup-go@v2
+        with:
+          go-version: '^1.22'
+      - name: Check out Code
+        uses: action/checkout@v2
+
+      #- name: Install dependencies
+       #run: go mod download
+      - name : Run tests
+        run: go test ./... -v
