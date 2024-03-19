@@ -49,3 +49,10 @@ func containsDuplicate(nums []int) bool {
 	}
 	return false
 }
+
+func singleNumber(nums []int) (n int) {
+	for i := 0; i < len(nums); i++ {
+		n ^= nums[i]
+	}
+	return n
+}

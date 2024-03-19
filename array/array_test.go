@@ -57,3 +57,21 @@ func TestContainsDuplicate(t *testing.T) {
 		}
 	}
 }
+
+func TestSingleNumber(t *testing.T) {
+	var tableTest = []struct {
+		nums []int
+		out  int
+	}{
+		{nums: []int{2, 2, 1}, out: 1},
+		{nums: []int{4, 1, 2, 1, 2}, out: 4},
+		{nums: []int{1}, out: 1},
+	}
+
+	for i, test := range tableTest {
+		res := singleNumber(test.nums)
+		if !reflect.DeepEqual(test.out, res) {
+			t.Errorf("test %d failed ex: %v got: %v\n", i+1, test.out, res)
+		}
+	}
+}
