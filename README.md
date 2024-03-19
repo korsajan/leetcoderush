@@ -20,9 +20,9 @@
 
 ## Array
 
-- [ ] [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
-- [ ] [Rotate Array](https://leetcode.com/problems/rotate-array/)
-- [ ] [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
+- [x] [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
+- [x] [Rotate Array](https://leetcode.com/problems/rotate-array/)
+- [x] [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
 - [ ] [Single Number](https://leetcode.com/problems/single-number/)
 - [ ] [Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/)
 - [ ] [Plus One](https://leetcode.com/problems/plus-one/)
