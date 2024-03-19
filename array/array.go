@@ -29,3 +29,12 @@ func binarySearch(a []int, low, high, target int) int {
 	}
 	return r
 }
+
+func rotate(nums []int, k int) {
+	n := len(nums)
+	out := make([]int, n)
+	for i := 0; i < n; i++ {
+		out[(i+k)%n] = nums[i]
+	}
+	copy(nums, out)
+}
