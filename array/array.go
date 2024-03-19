@@ -38,3 +38,14 @@ func rotate(nums []int, k int) {
 	}
 	copy(nums, out)
 }
+
+func containsDuplicate(nums []int) bool {
+	var filter = make(map[int]struct{})
+	for _, n := range nums {
+		if _, ok := filter[n]; ok {
+			return ok
+		}
+		filter[n] = struct{}{}
+	}
+	return false
+}
