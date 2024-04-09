@@ -56,3 +56,33 @@ func singleNumber(nums []int) (n int) {
 	}
 	return n
 }
+
+func intersect(nums1 []int, nums2 []int) []int {
+	var seen = make(map[int]int)
+	for _, num := range nums1 {
+		seen[num]++
+	}
+
+	var diff = make([]int, 0)
+	for _, num := range nums2 {
+		if n, load := seen[num]; load && n > 0 {
+			diff = append(diff, num)
+			seen[num]--
+		}
+	}
+	return diff
+}
+
+func moveZeroes(nums []int) {
+	z := 0
+	for i := range nums {
+		if nums[i] != 0 {
+			nums[z] = nums[i]
+			z++
+		}
+	}
+	for z < len(nums) {
+		nums[z] = 0
+		z++
+	}
+}

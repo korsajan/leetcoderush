@@ -2,6 +2,7 @@ package array
 
 import (
 	"reflect"
+	"sort"
 	"testing"
 )
 
@@ -72,6 +73,50 @@ func TestSingleNumber(t *testing.T) {
 		res := singleNumber(test.nums)
 		if !reflect.DeepEqual(test.out, res) {
 			t.Errorf("test %d failed ex: %v got: %v\n", i+1, test.out, res)
+		}
+	}
+}
+
+func TestIntersect(t *testing.T) {
+	var tableTest = []struct {
+		nums1, nums2 []int
+		out          []int
+	}{
+		{
+			nums1: []int{1, 2, 2, 1},
+			nums2: []int{2, 2},
+			out:   []int{2, 2},
+		},
+		{
+			nums1: []int{4, 9, 5},
+			nums2: []int{9, 4, 9, 8, 4},
+			out:   []int{4, 9},
+		},
+	}
+
+	for i, test := range tableTest {
+		res := intersect(test.nums1, test.nums2)
+		sort.Ints(res)
+		sort.Ints(test.out)
+		if !reflect.DeepEqual(test.out, res) {
+			t.Errorf("test %d failed ex: %v got: %v\n", i+1, test.out, res)
+		}
+	}
+}
+
+func TestMoveZeroes(t *testing.T) {
+	var tableTest = []struct {
+		nums []int
+		out  []int
+	}{
+		{nums: []int{0, 1, 0, 3, 12}, out: []int{1, 3, 12, 0, 0}},
+		{nums: []int{0}, out: []int{0}},
+	}
+
+	for i, test := range tableTest {
+		moveZeroes(test.nums)
+		if !reflect.DeepEqual(test.out, test.nums) {
+			t.Errorf("test %d failed ex: %v got: %v\n", i+1, test.out, test.nums)
 		}
 	}
 }
