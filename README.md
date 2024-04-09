@@ -1,4 +1,4 @@
-![progress](https://img.shields.io/badge/progress-16%25-yellowgreen)
+![progress](https://img.shields.io/badge/progress-20%25-yellowgreen)
 [![Go Tests](https://github.com/korsajan/leetcoderush/actions/workflows/go_test.yml/badge.svg?branch=main)](https://github.com/korsajan/leetcoderush/actions/workflows/go_test.yml)
 ![Language](https://img.shields.io/github/languages/top/korsajan/leetcoderush)
 
